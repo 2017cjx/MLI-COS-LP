@@ -49,6 +49,8 @@ const Comparison: React.FC = () => {
             </ul>
           </div>
         </div>
+        
+        <p className="text-center text-sm text-gray-600 mt-8">*MLI Registration Fee + SEVIS fee is required</p>
       </div>
     </section>
   );
