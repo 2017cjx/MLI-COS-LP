@@ -38,23 +38,72 @@ const CTA: React.FC = () => {
           </div>
         </div>
         
-        <form className="bg-white p-10 rounded-2xl shadow-2xl shadow-black/20 text-gray-800">
+        <form className="bg-white p-8 rounded-2xl shadow-2xl shadow-black/20 text-gray-800">
           <h3 className="font-serif text-[1.5rem] text-navy mb-2 text-center">Free Consultation</h3>
-          <p className="text-center text-gray-600 text-sm mb-7">We reply within 24 hours</p>
+          <p className="text-center text-gray-600 text-sm mb-6">We reply within 24 hours</p>
           
-          <div className="mb-5">
+          <div className="mb-4">
             <label className="block text-sm font-medium mb-1.5">Your Name *</label>
-            <input type="text" placeholder="John Smith" required className="w-full p-3.5 border-2 border-gray-200 rounded-lg text-base focus:outline-none focus:border-navy transition-colors" />
+            <input type="text" placeholder="John Smith" required className="w-full p-3 border-2 border-gray-200 rounded-lg text-base focus:outline-none focus:border-navy transition-colors bg-white" />
+          </div>
+          
+          <div className="mb-4">
+            <label className="block text-sm font-medium mb-1.5">Your Email *</label>
+            <input type="email" placeholder="john@email.com" required className="w-full p-3 border-2 border-gray-200 rounded-lg text-base focus:outline-none focus:border-navy transition-colors bg-white" />
+          </div>
+          
+          <div className="mb-4">
+            <label className="block text-sm font-medium mb-1.5">Phone Number *</label>
+            <input type="tel" placeholder="1234567890" required className="w-full p-3 border-2 border-gray-200 rounded-lg text-base focus:outline-none focus:border-navy transition-colors bg-white" />
+            <p className="text-xs text-gray-500 mt-1">Do not use a hyphen "-" or "+" when typing your phone number</p>
+          </div>
+          
+          <div className="mb-4">
+            <label className="flex items-center gap-2 text-sm cursor-pointer">
+              <input type="checkbox" className="w-4 h-4 accent-navy bg-white border-2 border-gray-300 rounded" />
+              <span>I do not want to receive a call from MLI</span>
+            </label>
+          </div>
+          
+          <div className="mb-4">
+            <label className="block text-sm font-medium mb-1.5">Campus Preference *</label>
+            <select required className="w-full p-3 border-2 border-gray-200 rounded-lg text-base focus:outline-none focus:border-navy transition-colors bg-white">
+              <option value="">Select a campus</option>
+              <option value="westwood">Westwood</option>
+              <option value="hollywood">Hollywood</option>
+              <option value="no-preference">No Preference</option>
+            </select>
+          </div>
+          
+          <div className="mb-4">
+            <label className="block text-sm font-medium mb-1.5">Approximately how soon do you plan on starting your program in the U.S.? *</label>
+            <select required className="w-full p-3 border-2 border-gray-200 rounded-lg text-base focus:outline-none focus:border-navy transition-colors bg-white">
+              <option value="">Select timeframe</option>
+              <option value="immediately">Immediately</option>
+              <option value="1-3-months">1-3 months</option>
+              <option value="3-6-months">3-6 months</option>
+              <option value="6-12-months">6-12 months</option>
+              <option value="not-sure">Not sure yet</option>
+            </select>
+          </div>
+          
+          <div className="mb-4">
+            <label className="block text-sm font-medium mb-1.5">How did you hear about MLI? *</label>
+            <select required className="w-full p-3 border-2 border-gray-200 rounded-lg text-base focus:outline-none focus:border-navy transition-colors bg-white">
+              <option value="">Select an option</option>
+              <option value="google">Google Search</option>
+              <option value="instagram">Instagram</option>
+              <option value="youtube">YouTube</option>
+              <option value="facebook">Facebook</option>
+              <option value="friend">Friend / Family</option>
+              <option value="agent">Education Agent</option>
+              <option value="other">Other</option>
+            </select>
           </div>
           
           <div className="mb-5">
-            <label className="block text-sm font-medium mb-1.5">Email *</label>
-            <input type="email" placeholder="john@email.com" required className="w-full p-3.5 border-2 border-gray-200 rounded-lg text-base focus:outline-none focus:border-navy transition-colors" />
-          </div>
-          
-          <div className="mb-5">
-            <label className="block text-sm font-medium mb-1.5">Phone or LINE ID</label>
-            <input type="text" placeholder="Phone or LINE" className="w-full p-3.5 border-2 border-gray-200 rounded-lg text-base focus:outline-none focus:border-navy transition-colors" />
+            <label className="block text-sm font-medium mb-1.5">Your Message</label>
+            <textarea placeholder="Tell us about your goals..." rows={3} className="w-full p-3 border-2 border-gray-200 rounded-lg text-base focus:outline-none focus:border-navy transition-colors resize-none bg-white"></textarea>
           </div>
           
           <button type="submit" className="w-full bg-gold text-navy p-4 border-none rounded-lg text-[1.1rem] font-bold cursor-pointer transition-all hover:bg-gold-light hover:-translate-y-0.5 shadow-lg shadow-gold/20">
