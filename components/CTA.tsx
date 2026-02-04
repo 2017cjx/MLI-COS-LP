@@ -1,8 +1,9 @@
 import React from 'react';
+import Flag from './Flag';
 
 const CTA: React.FC = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-navy to-navy-light" id="contact">
+    <section id="contact" className="py-20 bg-gradient-to-br from-navy to-navy-light scroll-mt-32">
       <div className="max-w-[1100px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div className="text-white">
           <h2 className="font-serif text-[2rem] mb-5">Let's Talk About Your Options</h2>
@@ -24,16 +25,16 @@ const CTA: React.FC = () => {
 
           <div className="mt-8">
             <p className="text-[0.95rem] mb-3 opacity-90">We speak your language:</p>
-            <div className="flex gap-3 flex-wrap">
-              <span className="text-[2rem] hover:scale-125 transition-transform cursor-default" title="Japanese">🇯🇵</span>
-              <span className="text-[2rem] hover:scale-125 transition-transform cursor-default" title="Chinese (Simplified)">🇨🇳</span>
-              <span className="text-[2rem] hover:scale-125 transition-transform cursor-default" title="Chinese (Traditional)">🇹🇼</span>
-              <span className="text-[2rem] hover:scale-125 transition-transform cursor-default" title="Korean">🇰🇷</span>
-              <span className="text-[2rem] hover:scale-125 transition-transform cursor-default" title="Arabic">🇸🇦</span>
-              <span className="text-[2rem] hover:scale-125 transition-transform cursor-default" title="Russian">🇷🇺</span>
-              <span className="text-[2rem] hover:scale-125 transition-transform cursor-default" title="Turkish">🇹🇷</span>
-              <span className="text-[2rem] hover:scale-125 transition-transform cursor-default" title="Portuguese">🇧🇷</span>
-              <span className="text-[2rem] hover:scale-125 transition-transform cursor-default" title="Spanish">🇪🇸</span>
+            <div className="flex gap-2 flex-wrap">
+              <span className="hover:scale-110 transition-transform cursor-default" title="Japanese"><Flag code="jp" size="sm" /></span>
+              <span className="hover:scale-110 transition-transform cursor-default" title="Chinese (Simplified)"><Flag code="cn" size="sm" /></span>
+              <span className="hover:scale-110 transition-transform cursor-default" title="Chinese (Traditional)"><Flag code="tw" size="sm" /></span>
+              <span className="hover:scale-110 transition-transform cursor-default" title="Korean"><Flag code="kr" size="sm" /></span>
+              <span className="hover:scale-110 transition-transform cursor-default" title="Arabic"><Flag code="sa" size="sm" /></span>
+              <span className="hover:scale-110 transition-transform cursor-default" title="Russian"><Flag code="ru" size="sm" /></span>
+              <span className="hover:scale-110 transition-transform cursor-default" title="Turkish"><Flag code="tr" size="sm" /></span>
+              <span className="hover:scale-110 transition-transform cursor-default" title="Portuguese"><Flag code="br" size="sm" /></span>
+              <span className="hover:scale-110 transition-transform cursor-default" title="Spanish"><Flag code="es" size="sm" /></span>
             </div>
           </div>
         </div>

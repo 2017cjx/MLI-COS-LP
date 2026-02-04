@@ -2,7 +2,7 @@ import React from 'react';
 
 const FAQ: React.FC = () => {
   return (
-    <section className="py-20 bg-white">
+    <section id="faq" className="py-20 bg-white scroll-mt-32">
       <div className="max-w-[1100px] mx-auto px-6">
         <div className="text-center mb-12">
           <div className="uppercase text-xs font-bold tracking-widest text-gold mb-3">Common Questions</div>
