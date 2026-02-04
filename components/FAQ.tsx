@@ -14,7 +14,7 @@ const FAQ: React.FC = () => {
             { q: "Can I change status if my visa expired?", a: "Yes, usually you can. If you haven't overstayed too long, our lawyer can check if you qualify. Ask us in a free consultation." },
             { q: "How long does it take?", a: "USCIS usually responds in 3-6 months. You can stay in the U.S. legally while you wait." },
             { q: "Can I work while studying?", a: "Yes. F1 students can work on campus up to 20 hours per week. During breaks, you can work full-time." },
-            { q: "Do you have Japanese staff?", a: "Yes! We have Japanese speakers who can help you through the whole process. 日本語OKです。" },
+            { q: "Do you have multilingual staff?", a: "Yes! We speak Japanese, Korean, Spanish, and more. We'll help you in your language." },
           ].map((item, i) => (
             <div key={i} className="bg-gray-100 p-7 rounded-xl">
               <h4 className="text-base text-navy font-bold mb-3 leading-snug">{item.q}</h4>

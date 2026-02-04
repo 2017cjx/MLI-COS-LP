@@ -41,7 +41,7 @@ const Reviews: React.FC = () => {
             <div className="flex flex-col items-start">
               <div className="text-[#fbbc05] text-xl tracking-widest">★★★★★</div>
               <div className="text-sm text-gray-600 mt-1">
-                <span className="font-bold text-gray-800">4.9</span> · #1 Rated in LA
+                <span className="font-bold text-gray-800">4.9</span> · #1 Rated in LA as of July 2025
               </div>
             </div>
           </div>
