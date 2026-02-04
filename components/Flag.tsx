@@ -8,25 +8,23 @@ interface FlagProps {
   className?: string;
 }
 
-// Using flagcdn.com - free flag CDN
-// Supported widths: 20, 40, 80, 160
+// Using flagcdn.com SVG flags
 const Flag: React.FC<FlagProps> = ({ code, size = 'md', className = '' }) => {
   const sizeMap = {
-    sm: { w: 20, h: 15, cdn: 20 },
-    md: { w: 32, h: 24, cdn: 40 },
-    lg: { w: 48, h: 36, cdn: 80 },
+    sm: { w: 20, h: 15 },
+    md: { w: 32, h: 24 },
+    lg: { w: 48, h: 36 },
   };
   
-  const { w, h, cdn } = sizeMap[size];
+  const { w, h } = sizeMap[size];
   
   return (
     <img 
-      src={`https://flagcdn.com/w${cdn}/${code}.png`}
+      src={`https://flagcdn.com/${code}.svg`}
       width={w}
       height={h}
       alt=""
-      className={`inline-block align-middle rounded-sm shadow-sm ${className}`}
-      style={{ objectFit: 'cover' }}
+      className={`inline-block align-middle rounded-sm ${className}`}
     />
   );
 };
