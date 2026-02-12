@@ -1,5 +1,6 @@
 import React from 'react';
 import Flag from './Flag';
+import { STAFF_LANGUAGES } from '../constants/languages';
 
 const CTA: React.FC = () => {
   return (
@@ -26,15 +27,11 @@ const CTA: React.FC = () => {
           <div className="mt-8">
             <p className="text-[0.95rem] mb-3 opacity-90">We speak your language:</p>
             <div className="flex gap-2 flex-wrap">
-              <span className="hover:scale-110 transition-transform cursor-default" title="Japanese"><Flag code="jp" size="sm" /></span>
-              <span className="hover:scale-110 transition-transform cursor-default" title="Chinese (Simplified)"><Flag code="cn" size="sm" /></span>
-              <span className="hover:scale-110 transition-transform cursor-default" title="Chinese (Traditional)"><Flag code="tw" size="sm" /></span>
-              <span className="hover:scale-110 transition-transform cursor-default" title="Korean"><Flag code="kr" size="sm" /></span>
-              <span className="hover:scale-110 transition-transform cursor-default" title="Arabic"><Flag code="sa" size="sm" /></span>
-              <span className="hover:scale-110 transition-transform cursor-default" title="Russian"><Flag code="ru" size="sm" /></span>
-              <span className="hover:scale-110 transition-transform cursor-default" title="Turkish"><Flag code="tr" size="sm" /></span>
-              <span className="hover:scale-110 transition-transform cursor-default" title="Portuguese"><Flag code="br" size="sm" /></span>
-              <span className="hover:scale-110 transition-transform cursor-default" title="Spanish"><Flag code="es" size="sm" /></span>
+              {STAFF_LANGUAGES.map((lang) => (
+                <span key={lang.code} className="hover:scale-110 transition-transform cursor-default" title={lang.name}>
+                  <Flag code={lang.code} size="sm" />
+                </span>
+              ))}
             </div>
           </div>
         </div>

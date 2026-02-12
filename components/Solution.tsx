@@ -8,16 +8,14 @@ const Solution: React.FC = () => {
           <div className="uppercase text-xs font-bold tracking-widest text-gold mb-3">How We Help</div>
           <h2 className="font-serif text-[2rem] text-navy mb-5">Stay Longer.<br />Learn More.</h2>
           <p className="text-gray-600 mb-6 text-[1.05rem] leading-loose">
-            MLI is more than an English school. We help you make long-term study possible. Visa support, flexible classes, fair prices.
+            MLI is more than an English school. We help make long-term study possible. Visa support, flexible classes, fair prices.
           </p>
           
           <ul className="mb-8 space-y-3">
             {[
-              "We issue I-20 for F1 student visa",
-              "Change of Status help with school lawyer",
-              "One price includes lawyer fee + USCIS fee",
-              "Staff speaks Japanese, Chinese, Korean, Spanish, Portuguese, Russian, Arabic, Turkish",
-              "$600 off tuition when visa is approved"
+              "We issue I-20s for F1 student visas",
+              "One price includes lawyer fee + USCIS fee + $600 tuition credit",
+              "Staff speaks Spanish, Portuguese, Turkish, Russian, German, French and Japanese"
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-base leading-relaxed">
                 <span className="text-success font-bold text-lg">✓</span>
@@ -36,7 +34,7 @@ const Solution: React.FC = () => {
             */}
             <img 
               src="/static/image/Patric.jpg" 
-              alt="Patrick Riley, ESL Instructor" 
+              alt="Patrick Riley, Academic Director" 
               className="w-full h-full object-cover object-center"
             />
           </div>
@@ -44,7 +42,7 @@ const Solution: React.FC = () => {
             <p className="text-[0.95rem] italic text-gray-800 mb-3 leading-relaxed">
               "When students come for a week or two, they have a good time. But when they come for longer, they really start to learn English -- and it's always amazing to see them make progress and help them along the way. Stop by and talk to us!"
             </p>
-            <div className="text-sm text-navy font-bold">— Patrick Riley, ESL Instructor</div>
+            <div className="text-sm text-navy font-bold">— Patrick Riley, Academic Director</div>
           </div>
         </div>
       </div>

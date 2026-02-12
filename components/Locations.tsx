@@ -14,7 +14,7 @@ const Locations: React.FC = () => {
           <div className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-black/5 flex flex-col">
             <div className="h-[250px] bg-gray-200 relative group overflow-hidden">
                <img 
-                src="/static/image/westwood.jpg"
+                src="/static/image/WW_building.png"
                 alt="Westwood Campus area"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                />
@@ -45,7 +45,7 @@ const Locations: React.FC = () => {
           <div className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-black/5 flex flex-col">
             <div className="h-[250px] bg-gray-200 relative group overflow-hidden">
               <img 
-                src="/static/image/hollywood.jpg"
+                src="/static/image/HW_building.png"
                 alt="Hollywood Campus area"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />

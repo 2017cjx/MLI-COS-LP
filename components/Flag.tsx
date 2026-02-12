@@ -1,25 +1,35 @@
-import React from 'react';
+import React from "react";
 
-type FlagCode = 'jp' | 'cn' | 'tw' | 'kr' | 'sa' | 'ru' | 'tr' | 'br' | 'es';
+type FlagCode =
+  | "jp"
+  | "cn"
+  | "tw"
+  | "sa"
+  | "ru"
+  | "tr"
+  | "br"
+  | "es"
+  | "de"
+  | "fr";
 
 interface FlagProps {
   code: FlagCode;
-  size?: 'sm' | 'md' | 'lg';
+  size?: "sm" | "md" | "lg";
   className?: string;
 }
 
 // Using flagcdn.com SVG flags
-const Flag: React.FC<FlagProps> = ({ code, size = 'md', className = '' }) => {
+const Flag: React.FC<FlagProps> = ({ code, size = "md", className = "" }) => {
   const sizeMap = {
     sm: { w: 20, h: 15 },
     md: { w: 32, h: 24 },
     lg: { w: 48, h: 36 },
   };
-  
+
   const { w, h } = sizeMap[size];
-  
+
   return (
-    <img 
+    <img
       src={`https://flagcdn.com/${code}.svg`}
       width={w}
       height={h}

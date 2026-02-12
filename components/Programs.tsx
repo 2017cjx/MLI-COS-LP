@@ -10,70 +10,70 @@ const Programs: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Program 1 */}
-          <div className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-black/5 flex flex-col h-full">
-            <div className="h-[200px] bg-gray-200 relative">
-              <img 
-                src="/static/image/ESL-and-TOEFL.jpg" 
-                alt="Students studying in class" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="p-7 flex-1 flex flex-col">
-              <div className="mb-auto">
-                <div className="inline-block bg-cream text-gold px-3.5 py-1.5 rounded-full text-xs font-bold mb-3">☀️ Morning 9AM-1:15PM</div>
-                <h3 className="font-serif text-[1.3rem] text-navy mb-2.5">ESL & TOEFL</h3>
-                <p className="text-gray-600 text-[0.9rem] mb-4 leading-relaxed">Serious English study. Grammar, reading, writing, listening.</p>
-                <ul className="space-y-1.5">
-                  <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> 4 levels: beginner to advanced</li>
-                  <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> TOEFL test prep available</li>
-                  <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> Monday to Thursday</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Program 2 */}
+          {/* Program 1: ESL + Conversation */}
           <div className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-black/5 flex flex-col h-full">
             <div className="h-[200px] bg-gray-200 relative">
               <img 
                 src="/static/image/Conversation.jpg" 
-                alt="Group of friends talking" 
+                alt="ESL and Conversation class" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="p-7 flex-1 flex flex-col">
               <div className="mb-auto">
-                <div className="inline-block bg-cream text-gold px-3.5 py-1.5 rounded-full text-xs font-bold mb-3">🌅 Afternoon & 🌙 Evening</div>
-                <h3 className="font-serif text-[1.3rem] text-navy mb-2.5">Conversation</h3>
-                <p className="text-gray-600 text-[0.9rem] mb-4 leading-relaxed">Build speaking confidence. Practice real English.</p>
+                <div className="inline-block bg-cream text-gold px-3.5 py-1.5 rounded-full text-xs font-bold mb-3">Beginner to Advanced</div>
+                <h3 className="font-serif text-[1.3rem] text-navy mb-2.5">ESL + Conversation</h3>
+                <p className="text-gray-600 text-[0.9rem] mb-4 leading-relaxed">Build confidence in everyday English.</p>
                 <ul className="space-y-1.5">
-                  <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> Choose 2, 3, or 4 days/week</li>
-                  <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> Small class sizes</li>
-                  <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> Good if you work daytime</li>
+                  <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> Beginner to Advanced</li>
+                  <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> Morning or Afternoon/Evening</li>
+                  <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> Build confidence in everyday English</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          {/* Program 3 */}
+          {/* Program 2: Test Preparation */}
           <div className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-black/5 flex flex-col h-full">
             <div className="h-[200px] bg-gray-200 relative">
               <img 
-                src="/static/image/Private-lesson.jpg" 
-                alt="One on one tutoring" 
+                src="/static/image/ESL-and-TOEFL.jpg" 
+                alt="Test preparation class" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="p-7 flex-1 flex flex-col">
               <div className="mb-auto">
-                <div className="inline-block bg-cream text-gold px-3.5 py-1.5 rounded-full text-xs font-bold mb-3">📅 Your Schedule</div>
-                <h3 className="font-serif text-[1.3rem] text-navy mb-2.5">Private Lessons</h3>
-                <p className="text-gray-600 text-[0.9rem] mb-4 leading-relaxed">One-on-one attention. Learn at your own pace.</p>
+                <div className="inline-block bg-cream text-gold px-3.5 py-1.5 rounded-full text-xs font-bold mb-3">TOEFL • IELTS • TOEIC</div>
+                <h3 className="font-serif text-[1.3rem] text-navy mb-2.5">Test Preparation</h3>
+                <p className="text-gray-600 text-[0.9rem] mb-4 leading-relaxed">Strategies for high scores.</p>
                 <ul className="space-y-1.5">
+                  <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> TOEFL • IELTS • TOEIC</li>
+                  <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> Morning sessions</li>
+                  <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> Strategies for high scores</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Program 3: Private Lessons */}
+          <div className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-black/5 flex flex-col h-full">
+            <div className="h-[200px] bg-gray-200 relative">
+              <img 
+                src="/static/image/Private-lesson.jpg" 
+                alt="Private one on one tutoring" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-7 flex-1 flex flex-col">
+              <div className="mb-auto">
+                <div className="inline-block bg-cream text-gold px-3.5 py-1.5 rounded-full text-xs font-bold mb-3">Your schedule, your goals</div>
+                <h3 className="font-serif text-[1.3rem] text-navy mb-2.5">Private Lessons</h3>
+                <p className="text-gray-600 text-[0.9rem] mb-4 leading-relaxed">1-on-1 or small groups.</p>
+                <ul className="space-y-1.5">
+                  <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> Your schedule, your goals</li>
                   <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> From $80/hour</li>
-                  <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> Flexible timing</li>
-                  <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> Custom lessons for you</li>
+                  <li className="text-[0.85rem] text-gray-800 flex items-center gap-2"><span className="text-success font-bold">✓</span> 1-on-1 or small groups</li>
                 </ul>
               </div>
             </div>
