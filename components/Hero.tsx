@@ -2,17 +2,17 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-[580px] flex items-center overflow-hidden">
+    <section className="relative min-h-[480px] sm:min-h-[580px] flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-navy to-navy-light z-0"></div>
       <div className="absolute inset-0 bg-center bg-cover opacity-30 z-0" style={{backgroundImage: "url('/static/image/Background.jpg')"}}></div>
 
-      <div className="relative z-10 max-w-[1100px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center py-20">
+      <div className="relative z-10 max-w-[1100px] mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center py-12 sm:py-20">
         <div className="text-white">
-          <div className="inline-block bg-white/15 px-5 py-2 rounded-full text-sm mb-6 border border-white/20">
+          <div className="inline-block bg-white/15 px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm mb-4 sm:mb-6 border border-white/20">
             English School in LA · Since 2002
           </div>
-          <h1 className="font-serif text-[2.8rem] font-bold mb-5 leading-tight">
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-[2.8rem] font-bold mb-4 sm:mb-5 leading-tight">
             Already in L.A.?<br />
             <span className="text-gold">Turn Your Visit</span> into Real Fluency.
           </h1>

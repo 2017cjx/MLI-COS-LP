@@ -4,13 +4,13 @@ type FlagCode =
   | "jp"
   | "cn"
   | "tw"
+  | "kr"
   | "sa"
   | "ru"
   | "tr"
   | "br"
   | "es"
-  | "de"
-  | "fr";
+  | "de";
 
 interface FlagProps {
   code: FlagCode;
