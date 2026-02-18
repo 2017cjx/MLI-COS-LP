@@ -17,20 +17,20 @@ const FAQ: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[900px] mx-auto">
           {[
             {
-              q: "Can I change status if my visa expired?",
-              a: "Yes, usually you can. If you haven't overstayed too long, our lawyer can check if you qualify. Ask us in a free consultation.",
-            },
-            {
               q: "How long does it take?",
-              a: "USCIS usually responds in 3-6 months. You can stay in the U.S. legally while you wait.",
-            },
-            {
-              q: "Can I work while studying?",
-              a: "Yes. F1 students can work on campus up to 20 hours per week. During breaks, you can work full-time.",
+              a: "Typically 3–6 months. You can stay legally while you wait.",
             },
             {
               q: "Do you have multilingual staff?",
-              a: `Yes! We speak ${STAFF_LANGUAGES_TEXT}. We'll help you in your language.`,
+              a: `Yes! We speak ${STAFF_LANGUAGES_TEXT}.`,
+            },
+            {
+              q: "Can a student apply for change of status from a visa other than B1 or B2?",
+              a: "Yes. Valid status, I-20, and I-539. Don't enroll until approved.",
+            },
+            {
+              q: "Can I travel overseas with my change of status approval?",
+              a: "Generally no—leaving can abandon your application. Ask an attorney if you must travel.",
             },
           ].map((item, i) => (
             <div key={i} className="bg-gray-100 p-7 rounded-xl">

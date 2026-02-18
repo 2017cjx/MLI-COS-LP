@@ -37,8 +37,8 @@ const CTA: React.FC = () => {
         </div>
         
         <form className="bg-white p-8 rounded-2xl shadow-2xl shadow-black/20 text-gray-800">
-          <h3 className="font-serif text-[1.5rem] text-navy mb-2 text-center">Free Consultation</h3>
-          <p className="text-center text-gray-600 text-sm mb-6">We reply within 24 hours</p>
+          <h3 className="font-serif text-[1.5rem] text-navy mb-2 text-center">Free Counseling</h3>
+          <p className="text-center text-gray-600 text-sm mb-6">We reply within 2 business days</p>
           
           <div className="mb-4">
             <label className="block text-sm font-medium mb-1.5">Your Name *</label>
@@ -51,7 +51,7 @@ const CTA: React.FC = () => {
           </div>
           
           <div className="mb-4">
-            <label className="block text-sm font-medium mb-1.5">Phone Number *</label>
+            <label className="block text-sm font-medium mb-1.5">Phone Number / WhatsApp Number *</label>
             <input type="tel" placeholder="1234567890" required className="w-full p-3 border-2 border-gray-200 rounded-lg text-base focus:outline-none focus:border-navy transition-colors bg-white" />
             <p className="text-xs text-gray-500 mt-1">Do not use a hyphen "-" or "+" when typing your phone number</p>
           </div>
@@ -59,7 +59,7 @@ const CTA: React.FC = () => {
           <div className="mb-4">
             <label className="flex items-center gap-2 text-sm cursor-pointer">
               <input type="checkbox" className="w-4 h-4 accent-navy bg-white border-2 border-gray-300 rounded" />
-              <span>I do not want to receive a call from MLI</span>
+              <span>I would like to be contacted via WhatsApp</span>
             </label>
           </div>
           
@@ -105,7 +105,7 @@ const CTA: React.FC = () => {
           </div>
           
           <button type="submit" className="w-full bg-gold text-navy p-4 border-none rounded-lg text-[1.1rem] font-bold cursor-pointer transition-all hover:bg-gold-light hover:-translate-y-0.5 shadow-lg shadow-gold/20">
-            Get Free Consultation →
+            Get Free Counseling →
           </button>
           
           <p className="text-center text-xs text-gray-600 mt-4">🔒 We keep your information private.</p>
