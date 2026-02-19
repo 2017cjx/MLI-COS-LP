@@ -17,7 +17,7 @@ const Comparison: React.FC = () => {
             <ul className="text-left space-y-3 text-sm">
               <li className="pb-3 border-b border-gray-200 flex items-start gap-2.5"><span className="text-danger font-bold">✕</span> Process is complicated</li>
               <li className="pb-3 border-b border-gray-200 flex items-start gap-2.5"><span className="text-danger font-bold">✕</span> Prepare & submit alone</li>
-              <li className="pb-3 border-b border-gray-200 flex items-start gap-2.5"><span className="text-danger font-bold">✕</span> High rejection risk</li>
+              <li className="pb-3 border-b border-gray-200 flex items-start gap-2.5"><span className="text-danger font-bold">✕</span> Higher risk of Request for Evidence (RFE)</li>
               <li className="pb-3 border-b border-gray-200 flex items-start gap-2.5"><span className="text-danger font-bold">✕</span> Takes a lot of time</li>
               <li className="flex items-start gap-2.5"><span className="text-danger font-bold">✕</span> No expert help</li>
             </ul>
@@ -51,7 +51,7 @@ const Comparison: React.FC = () => {
           </div>
         </div>
         
-        <p className="text-center text-sm text-gray-600 mt-8">*MLI Registration Fee + SEVIS fee is required</p>
+        <p className="text-center text-sm text-gray-600 mt-8">*MLI Registration Fee + SEVIS fee is required. Approval is not guaranteed.</p>
       </div>
     </section>
   );
