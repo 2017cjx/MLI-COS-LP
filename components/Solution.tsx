@@ -8,14 +8,14 @@ const Solution: React.FC = () => {
           <div className="uppercase text-xs font-bold tracking-widest text-gold mb-3">How We Help</div>
           <h2 className="font-serif text-[2rem] text-navy mb-5">Stay Longer.<br />Learn More.</h2>
           <p className="text-gray-600 mb-6 text-[1.05rem] leading-loose">
-            MLI is more than an English school. We help make long-term study possible. Visa support, flexible classes, fair prices.
+            MLI is more than an English school. We help make long-term study possible. Change of Status (COS) support, flexible classes, fair prices.
           </p>
           
           <ul className="mb-8 space-y-3">
             {[
-              "We issue I-20s for F1 student visas",
+              "We issue I-20s for Change of Status (COS) to F-1",
               "One price includes lawyer fee + USCIS fee + $600 tuition credit",
-              "Staff speaks Spanish, Portuguese, Turkish, Russian, German and Japanese"
+              "Staff speaks Spanish, Portuguese, Turkish, and Russian"
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-base leading-relaxed">
                 <span className="text-success font-bold text-lg">✓</span>

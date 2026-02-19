@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { STAFF_LANGUAGES_TEXT } from "../constants/languages";
 
 const FAQ: React.FC = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const items = [
+    {
+      q: "How long does it take?",
+      a: "Typically 3–6 months. You can stay legally while you wait.",
+    },
+    {
+      q: "Do you have multilingual staff?",
+      a: `Yes! We speak ${STAFF_LANGUAGES_TEXT}.`,
+    },
+    {
+      q: "Can a student apply for change of status from a visa other than B1 or B2?",
+      a: "Yes, in some cases it is possible to apply for a Change of Status (COS) to F-1 from another nonimmigrant status. However, eligibility depends on the individual's current visa category and immigration history. Certain visa categories may have restrictions or may not be eligible for a Change of Status. For example, J-1 or J-2 visa holders who are subject to the two-year home residency requirement (INA 212(e)) are generally not eligible to change status to F-1 unless they first obtain a waiver of that requirement. We strongly recommend that students consult with us and our immigration attorney.",
+    },
+    {
+      q: "Can I travel overseas with my change of status approval?",
+      a: "If you depart the United States after your Change of Status (COS) to F-1 is approved, you will need to apply for and obtain an F-1 student visa at a U.S. embassy or consulate abroad before returning to the United States. Please note that a Change of Status approval only changes your immigration status within the United States. It does not issue an F-1 visa. If you leave the U.S. without first obtaining an F-1 visa, you cannot reenter in F-1 status until you obtain one. Before making travel plans, students should consult with our Designated School Official (DSO).",
+    },
+  ];
+
   return (
     <section id="faq" className="py-20 bg-white scroll-mt-32">
       <div className="max-w-[1100px] mx-auto px-6">
@@ -14,34 +35,42 @@ const FAQ: React.FC = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[900px] mx-auto">
-          {[
-            {
-              q: "How long does it take?",
-              a: "Typically 3–6 months. You can stay legally while you wait.",
-            },
-            {
-              q: "Do you have multilingual staff?",
-              a: `Yes! We speak ${STAFF_LANGUAGES_TEXT}.`,
-            },
-            {
-              q: "Can a student apply for change of status from a visa other than B1 or B2?",
-              a: "Yes. Valid status, I-20, and I-539. Don't enroll until approved.",
-            },
-            {
-              q: "Can I travel overseas with my change of status approval?",
-              a: "Generally no—leaving can abandon your application. Ask an attorney if you must travel.",
-            },
-          ].map((item, i) => (
-            <div key={i} className="bg-gray-100 p-7 rounded-xl">
-              <h4 className="text-base text-navy font-bold mb-3 leading-snug">
-                {item.q}
-              </h4>
-              <p className="text-[0.9rem] text-gray-600 leading-relaxed">
-                {item.a}
-              </p>
-            </div>
-          ))}
+        <div className="flex flex-col gap-4 max-w-[700px] mx-auto">
+          {items.map((item, i) => {
+            const isOpen = openIndex === i;
+            return (
+              <div
+                key={i}
+                className="bg-gray-100 rounded-xl overflow-hidden"
+              >
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(isOpen ? null : i)}
+                  className="w-full p-7 text-left flex items-start justify-between gap-4 hover:bg-gray-200/50 transition-colors"
+                  aria-expanded={isOpen}
+                >
+                  <h4 className="text-base text-navy font-bold leading-snug">
+                    {item.q}
+                  </h4>
+                  <span
+                    className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-navy text-sm font-bold transition-transform ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                    aria-hidden
+                  >
+                    ▼
+                  </span>
+                </button>
+                {isOpen && (
+                  <div className="px-7 pb-7 pt-0">
+                    <p className="text-[0.9rem] text-gray-600 leading-relaxed">
+                      {item.a}
+                    </p>
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

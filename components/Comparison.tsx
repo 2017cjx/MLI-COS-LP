@@ -31,6 +31,7 @@ const Comparison: React.FC = () => {
               <li className="pb-3 border-b border-white/15 flex items-start gap-2.5"><span className="text-gold font-bold">✓</span> Attorney fee included</li>
               <li className="pb-3 border-b border-white/15 flex items-start gap-2.5"><span className="text-gold font-bold">✓</span> Filing fee ($420) included</li>
               <li className="pb-3 border-b border-white/15 flex items-start gap-2.5"><span className="text-gold font-bold">✓</span> Lawyer is COS expert</li>
+              <li className="pb-3 border-b border-white/15 flex items-start gap-2.5"><span className="text-gold font-bold">✓</span> If COS denied: free reapplication prep — you only pay filing fee</li>
               <li className="pb-3 border-b border-white/15 flex items-start gap-2.5"><span className="text-gold font-bold">✓</span> We support you fully</li>
               <li className="flex items-start gap-2.5"><span className="text-gold font-bold">✓</span> $600 tuition credit on approval</li>
             </ul>

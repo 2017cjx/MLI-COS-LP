@@ -14,7 +14,7 @@ const CTA: React.FC = () => {
           <ul className="space-y-2 mb-8">
             {[
               "Free 30-minute talk",
-              "Check if you can change visa status",
+              "Check if you can apply for Change of Status (COS)",
               "Find the right program for you",
               "Tour our campus (in person or online)"
             ].map((item, i) => (

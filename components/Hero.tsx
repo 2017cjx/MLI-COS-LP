@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
             </div>
             <div className="flex items-center gap-3 text-base">
               <div className="w-6 h-6 bg-gold rounded-full flex items-center justify-center text-navy text-xs font-bold">✓</div>
-              <span>F1 student visa support</span>
+              <span>Change of Status (COS) support</span>
             </div>
             <div className="flex items-center gap-3 text-base">
               <div className="w-6 h-6 bg-gold rounded-full flex items-center justify-center text-navy text-xs font-bold">✓</div>
