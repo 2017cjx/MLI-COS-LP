@@ -98,7 +98,7 @@ const FAQ: React.FC = () => {
                 {isOpen && (
                   <div className="px-7 pb-7 pt-0">
                     {Array.isArray(item.a) ? (
-                      <div className="flex flex-col gap-3">
+                      <div className="space-y-4">
                         {item.a.map((para, j) => (
                           <p
                             key={j}
