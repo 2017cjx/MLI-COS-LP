@@ -2,12 +2,20 @@ import React, { useState } from "react";
 import { STAFF_LANGUAGES_TEXT } from "../constants/languages";
 
 const FAQ: React.FC = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndices, setOpenIndices] = useState<Set<number>>(new Set());
 
   const items = [
     {
       q: "How long does it take?",
       a: "Typically 3–6 months. You can stay legally while you wait.",
+    },
+    {
+      q: "When is the best time to apply for a Change of Status (COS) to F-1?",
+      a: "A Change of Status (COS) application should generally be filed while the applicant is still maintaining valid nonimmigrant status in the United States. USCIS requires that Form I-539 be submitted before the applicant's current status expires. Because processing times can vary, it is important to plan carefully to avoid any gap in lawful status. The appropriate timing depends on each individual's current visa category, expiration date, and intended program start date. Students are strongly encouraged to consult with our designated Immigration Attorney before filing a Change of Status application to ensure proper timing and compliance with U.S. immigration regulations.",
+    },
+    {
+      q: "How far in advance should I begin preparing my Change of Status (COS) application before my current status expires?",
+      a: "Students should begin preparing their Change of Status (COS) application well in advance of their current status expiration date. USCIS requires that Form I-539 be properly filed before the applicant's current status expires. Because document preparation, school processing, and USCIS processing times can vary, students are encouraged to start planning early to avoid any gap in lawful status. The appropriate timeline depends on the individual's visa category, expiration date, and intended program start date. Students should consult with our designated Immigration Attorney as early as possible to determine the proper filing strategy and timing.",
     },
     {
       q: "Do you have multilingual staff?",
@@ -37,7 +45,15 @@ const FAQ: React.FC = () => {
 
         <div className="flex flex-col gap-4 max-w-[700px] mx-auto">
           {items.map((item, i) => {
-            const isOpen = openIndex === i;
+            const isOpen = openIndices.has(i);
+            const toggle = () => {
+              setOpenIndices((prev) => {
+                const next = new Set(prev);
+                if (next.has(i)) next.delete(i);
+                else next.add(i);
+                return next;
+              });
+            };
             return (
               <div
                 key={i}
@@ -45,7 +61,7 @@ const FAQ: React.FC = () => {
               >
                 <button
                   type="button"
-                  onClick={() => setOpenIndex(isOpen ? null : i)}
+                  onClick={toggle}
                   className="w-full p-7 text-left flex items-start justify-between gap-4 hover:bg-gray-200/50 transition-colors"
                   aria-expanded={isOpen}
                 >

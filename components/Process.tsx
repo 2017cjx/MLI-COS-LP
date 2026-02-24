@@ -19,9 +19,9 @@ const Process: React.FC = () => {
           <div className="hidden md:block absolute top-10 left-[8%] right-[8%] h-[3px] bg-gradient-to-r from-gold to-white/30 z-0"></div>
 
           {[
-            { num: 1, title: "Enroll at MLI", desc: "Request your I-20" },
-            { num: 2, title: "Pay Fees", desc: "Registration + SEVIS fees" },
-            { num: 3, title: "Gather Documents", desc: "Passport, current visa, I-94, financial proof" },
+            { num: 1, title: "Enroll at MLI", desc: "Apply for MLI" },
+            { num: 2, title: "Pay Fees", desc: "Registration + SEVIS fee + COS fee" },
+            { num: 3, title: "Gather Documents", desc: "Request your I-20. Passport, current visa, I-94, financial proof" },
             { num: 4, title: "Prepare with Lawyer", desc: "Our lawyer prepares your application" },
             { num: 5, title: "Submit to USCIS", desc: "We submit your case for you" },
             { num: 6, title: "Get Response", desc: "Current processing times vary (average 4-9 months)" },
