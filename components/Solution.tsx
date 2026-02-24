@@ -15,7 +15,7 @@ const Solution: React.FC = () => {
             {[
               "We issue I-20s for Change of Status (COS) to F-1",
               "One price includes lawyer fee + USCIS fee + $600 tuition credit",
-              "Staff speaks Spanish, Portuguese, Turkish, and Russian"
+              "Staff speaks Spanish, Portuguese, Turkish, Russian, and French"
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-base leading-relaxed">
                 <span className="text-success font-bold text-lg">✓</span>

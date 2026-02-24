@@ -26,13 +26,13 @@ const Programs: React.FC = () => {
                 <span className="inline-flex items-center rounded-full bg-gold/10 text-navy text-xs font-medium px-2.5 py-1">Group Lessons</span>
               </div>
               <ul className="space-y-1.5 text-[0.9rem] text-gray-700 list-none pl-0">
-                <li className="flex items-center gap-2"><span className="text-success">✓</span> ESL (Beginner to advanced)</li>
+                <li className="flex items-center gap-2"><span className="text-success">✓</span> ESL (Beginner to Advanced)</li>
                 <li className="flex items-center gap-2"><span className="text-success">✓</span> TOEFL</li>
               </ul>
             </div>
           </div>
 
-          {/* Card 2: Group Lessons — Afternoon */}
+          {/* Card 2: Group Lessons — Afternoon/Evening */}
           <div className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-black/5 flex flex-col h-full">
             <div className="h-[200px] bg-gray-200 relative">
               <img
@@ -42,7 +42,7 @@ const Programs: React.FC = () => {
               />
             </div>
             <div className="p-7 flex-1 flex flex-col">
-              <h3 className="font-serif text-[1.3rem] text-navy mb-2.5">Afternoon</h3>
+              <h3 className="font-serif text-[1.3rem] text-navy mb-2.5">Afternoon/Evening</h3>
               <div className="flex flex-wrap gap-2 mb-3">
                 <span className="inline-flex items-center rounded-full bg-gold/10 text-navy text-xs font-medium px-2.5 py-1">2, 3 or 4 days/week</span>
                 <span className="inline-flex items-center rounded-full bg-gold/10 text-navy text-xs font-medium px-2.5 py-1">Group Lessons</span>
@@ -69,7 +69,7 @@ const Programs: React.FC = () => {
                 <span className="inline-flex items-center rounded-full bg-gold/10 text-navy text-xs font-medium px-2.5 py-1">Flexible timing</span>
               </div>
               <ul className="space-y-2 text-[0.9rem] text-gray-700 list-none pl-0">
-                <li className="flex items-center gap-2"><span className="text-success">✓</span> Custom lessons for you</li>
+                <li className="flex items-center gap-2"><span className="text-success">✓</span> Lessons customized for you</li>
                 <li className="flex items-center gap-2"><span className="text-success">✓</span> From $56/hour</li>
               </ul>
             </div>

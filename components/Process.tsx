@@ -24,7 +24,7 @@ const Process: React.FC = () => {
             { num: 3, title: "Gather Documents", desc: "Passport, current visa, I-94, financial proof" },
             { num: 4, title: "Prepare with Lawyer", desc: "Our lawyer prepares your application" },
             { num: 5, title: "Submit to USCIS", desc: "We submit your case for you" },
-            { num: 6, title: "Get Response", desc: "Current processing times vary (Average 4-9 months)" },
+            { num: 6, title: "Get Response", desc: "Current processing times vary (average 4-9 months)" },
           ].map((step, i) => (
             <div key={i} className="text-center relative z-10">
               <div className="w-20 h-20 bg-gold text-navy rounded-full flex items-center justify-center font-serif text-2xl font-bold mx-auto mb-5 shadow-lg shadow-gold/40">

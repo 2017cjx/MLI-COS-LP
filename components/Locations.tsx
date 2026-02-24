@@ -23,7 +23,7 @@ const Locations: React.FC = () => {
             <div className="p-7 flex-1 flex flex-col">
               <h3 className="text-[1.3rem] text-navy mb-3 font-bold font-serif">Westwood</h3>
               <p className="text-[0.95rem] text-gray-600 mb-6 leading-relaxed flex-1">
-                Near UCLA. 10 min to Beverly Hills. 15 min to Santa Monica. Safe, academic environment with a bus stop right outside.
+                Near UCLA. 10 min to Beverly Hills. 15 min to Santa Monica. Safe, academic environment near Hammer Museum, cafes, and restaurants.
               </p>
               <div className="flex flex-col gap-3 mt-auto">
                 <div className="flex items-center gap-2 text-navy font-bold text-lg">
@@ -54,7 +54,7 @@ const Locations: React.FC = () => {
             <div className="p-7 flex-1 flex flex-col">
               <h3 className="text-[1.3rem] text-navy mb-3 font-bold font-serif">Hollywood</h3>
               <p className="text-[0.95rem] text-gray-600 mb-6 leading-relaxed flex-1">
-                Walk to the Walk of Fame. Near Chinese Theater. Restaurants, shops, and entertainment everywhere.
+                Directly on the Walk of Fame. Near Chinese Theater. Restaurants, shops, and entertainment everywhere.
               </p>
               <div className="flex flex-col gap-3 mt-auto">
                 <div className="flex items-center gap-2 text-navy font-bold text-lg">

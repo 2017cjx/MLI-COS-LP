@@ -14,7 +14,7 @@ const FAQ: React.FC = () => {
       a: `Yes! We speak ${STAFF_LANGUAGES_TEXT}.`,
     },
     {
-      q: "Can a student apply for change of status from a visa other than B1 or B2?",
+      q: "Can I apply for change of status from a visa other than B1 or B2?",
       a: "Yes, in some cases it is possible to apply for a Change of Status (COS) to F-1 from another nonimmigrant status. However, eligibility depends on the individual's current visa category and immigration history. Certain visa categories may have restrictions or may not be eligible for a Change of Status. For example, J-1 or J-2 visa holders who are subject to the two-year home residency requirement (INA 212(e)) are generally not eligible to change status to F-1 unless they first obtain a waiver of that requirement. We strongly recommend that students consult with us and our immigration attorney.",
     },
     {

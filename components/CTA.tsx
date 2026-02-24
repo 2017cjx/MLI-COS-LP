@@ -53,7 +53,7 @@ const CTA: React.FC = () => {
           <div className="mb-4">
             <label className="block text-sm font-medium mb-1.5">Phone Number / WhatsApp Number *</label>
             <input type="tel" placeholder="1234567890" required className="w-full p-3 border-2 border-gray-200 rounded-lg text-base focus:outline-none focus:border-navy transition-colors bg-white" />
-            <p className="text-xs text-gray-500 mt-1">Do not use a hyphen "-" or "+" when typing your phone number</p>
+            <p className="text-xs text-gray-500 mt-1">Do not use + or - when typing your phone number</p>
           </div>
           
           <div className="mb-4">

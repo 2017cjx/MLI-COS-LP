@@ -10,7 +10,8 @@ type FlagCode =
   | "tr"
   | "br"
   | "es"
-  | "de";
+  | "de"
+  | "fr";
 
 interface FlagProps {
   code: FlagCode;

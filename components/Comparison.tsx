@@ -44,7 +44,7 @@ const Comparison: React.FC = () => {
             <ul className="text-left space-y-3 text-sm">
               <li className="pb-3 border-b border-gray-200 flex items-start gap-2.5"><span className="text-danger font-bold">✕</span> Hourly billing</li>
               <li className="pb-3 border-b border-gray-200 flex items-start gap-2.5"><span className="text-danger font-bold">✕</span> Filing fee not included</li>
-              <li className="pb-3 border-b border-gray-200 flex items-start gap-2.5"><span className="text-danger font-bold">✕</span> Handles many case types</li>
+              <li className="pb-3 border-b border-gray-200 flex items-start gap-2.5"><span className="text-danger font-bold">✕</span> Handle many case types</li>
               <li className="pb-3 border-b border-gray-200 flex items-start gap-2.5"><span className="text-danger font-bold">✕</span> Hard to contact</li>
               <li className="flex items-start gap-2.5"><span className="text-danger font-bold">✕</span> No school benefits</li>
             </ul>

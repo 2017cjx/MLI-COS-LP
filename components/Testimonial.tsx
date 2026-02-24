@@ -7,6 +7,7 @@ const Testimonial: React.FC = () => {
         <div className="uppercase text-xs font-bold tracking-widest text-gold mb-3">Student Story</div>
         <div className="font-serif text-2xl text-navy leading-relaxed mb-8 relative">
           <span className="absolute -top-5 -left-8 text-[4rem] text-gold opacity-30 select-none">"</span>
+          <span className="absolute -bottom-2 -right-8 text-[4rem] text-gold opacity-30 select-none">"</span>
           After a few months, things changed, I started speaking more, I gained confidence, and I realized I could do things on my own outside.
         </div>
         <div className="flex items-center justify-center gap-4">
